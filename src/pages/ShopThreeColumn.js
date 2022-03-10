@@ -1,6 +1,14 @@
 function ShopThreeColumn() {
   return (
-    <h1 className='text-red-600 text-center mt-6'>Template Grid 3 Column</h1>
+    <>
+      {/* ----- Header start ----- */}
+      <header>
+        <div className='container'>
+          <div className='flex items-center'></div>
+        </div>
+      </header>
+      {/* ----- Header end ----- */}
+    </>
   );
 }
 
