@@ -1,3 +1,4 @@
+import './App.css';
 import ShopThreeColumn from './pages/ShopThreeColumn';
 
 function App() {

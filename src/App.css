@@ -1,0 +1,4 @@
+.shop-tab-nav .active {
+  --tw-text-opacity: 1;
+  color: rgb(252 101 57 / var(--tw-text-opacity));
+}
