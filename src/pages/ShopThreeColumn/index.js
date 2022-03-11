@@ -1401,8 +1401,56 @@ function ShopThreeColumn() {
       </section>
       {/* ----- Products List section end ----- */}
       {/* ----- Pagination section start ----- */}
-      <section id='pagination' className='mt-10'></section>
+      <section id='pagination' className='mt-12 mb-24'>
+        <div className='container'>
+          <ul className='pagination-items flex flex-wrap items-center justify-center'>
+            <li className='pagination-item px-2'>
+              <a
+                href='#'
+                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
+              >
+                <i class='icon-arrow-left'></i>
+              </a>
+            </li>
+            <li className='pagination-item px-2'>
+              <a
+                href='#'
+                className='w-11 h-11 flex items-center justify-center  leading-none  shadow bg-orange text-white transition-all'
+              >
+                1
+              </a>
+            </li>
+            <li className='pagination-item px-2'>
+              <a
+                href='#'
+                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
+              >
+                2
+              </a>
+            </li>
+            <li className='pagination-item px-2'>
+              <a
+                href='#'
+                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
+              >
+                3
+              </a>
+            </li>
+            <li className='pagination-item px-2'>
+              <a
+                href='#'
+                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
+              >
+                <i class='icon-arrow-right'></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
       {/* ----- Pagination section end ----- */}
+      {/* ----- Contact section start ----- */}
+
+      {/* ----- Contact section end ----- */}
     </>
   );
 }
