@@ -37,37 +37,346 @@ function ShopThreeColumn() {
             <div className='header-middle__col hidden lg:flex flex-1'>
               <nav className='header-nav'>
                 <ul className='flex flex-wrap'>
-                  <li className='header-nav__item'>
+                  <li className='header-nav__item relative group'>
                     <a
                       className='block py-10 xl:pr-6 md:pr-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
                       href='#'
                     >
                       Home
                     </a>
+                    <ul className='submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max'>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Airpod
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Smartwatch
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Drone
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          BackPack
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li className='header-nav__item'>
+                  <li className='header-nav__item group'>
                     <a
                       className='block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
                       href='#'
                     >
                       Shop
                     </a>
+                    <ul className='mega-menu flex flex-wrap bg-white py-5 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10'>
+                      <li className='flex-auto px-4'>
+                        <a
+                          className='font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Shop Grid{' '}
+                        </a>
+                        <ul className='pb-2'>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop Grid 3 Column
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop Grid 4 Column
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop Grid Left Sidebar
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              shop Grid Right Sidebar
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li className='flex-auto px-4'>
+                        <a
+                          className='font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange'
+                          href='shop-list.html'
+                        >
+                          shop list
+                        </a>
+                        <ul className='pb-2'>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop List
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop List Left Sidebar
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop List Right Sidebar
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+
+                      <li className='flex-auto px-4'>
+                        <a
+                          className='font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Product Types
+                        </a>
+                        <ul className='pb-2'>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop Single
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop Variable
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop Affiliate
+                            </a>
+                          </li>
+                          <li className='my-3'>
+                            <a
+                              className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
+                              href='#'
+                            >
+                              Shop Group
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li className='overflow-hidden flex-auto mx-4'>
+                        <a href='#'>
+                          <img
+                            className='transform hover:scale-105 transition-all w-full'
+                            src='assets/images/mega-menu/megamenu.webp'
+                            alt='Smartwatch'
+                            width='1000'
+                            height='120'
+                          />
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li className='header-nav__item'>
+                  <li className='header-nav__item relative group'>
                     <a
                       className='block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
                       href='#'
                     >
                       Blog
                     </a>
+                    <ul className='submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max'>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Blog Grid 3 Column
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Blog Grid 2 Column
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Blog Grid Left Sidebar
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Blog Grid Right Sidebar
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Blog list
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Blog List Left Sidebar
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          {' '}
+                          Blog List Right Sideba
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          {' '}
+                          Blog details
+                        </a>
+                      </li>
+                    </ul>
                   </li>
-                  <li className='header-nav__item'>
+                  <li className='header-nav__item relative group'>
                     <a
                       className='block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
                       href='#'
                     >
                       Pages
                     </a>
+                    <ul className='submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max'>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          About Page
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Cart Page
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Checkout Page
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Compare Page
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Login &amp; Register Page
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Account Page
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Wishlist Page
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Frequently Questions
+                        </a>
+                      </li>
+                      <li className='my-3'>
+                        <a
+                          className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
+                          href='#'
+                        >
+                          Error 404
+                        </a>
+                      </li>
+                    </ul>
                   </li>
                   <li className='header-nav__item'>
                     <a
