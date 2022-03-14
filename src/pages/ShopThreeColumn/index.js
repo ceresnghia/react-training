@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 function ShopThreeColumn() {
   const [isShowProductsGrid, setIsShowProductsGrid] = useState(true);
@@ -23,7 +24,7 @@ function ShopThreeColumn() {
           <div className='header flex items-center'>
             <div className='header-left__col w-6/12 lg:w-2/12'>
               <div className='header-logo'>
-                <a href='#'>
+                <Link to='/shop-grid-col-3'>
                   <img
                     src='assets/images/logo/logo.webp'
                     alt='logo'
@@ -31,184 +32,184 @@ function ShopThreeColumn() {
                     width='125'
                     height='45'
                   />
-                </a>
+                </Link>
               </div>
             </div>
             <div className='header-middle__col hidden lg:flex flex-1 relative'>
               <nav className='header-nav'>
                 <ul className='flex flex-wrap'>
                   <li className='header-nav__item relative group'>
-                    <a
+                    <Link
                       className='block py-10 xl:pr-6 md:pr-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
-                      href='#'
+                      to='/shop-grid-col-3'
                     >
                       Home
-                    </a>
+                    </Link>
                     <ul className='submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max'>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Airpod
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Smartwatch
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Drone
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           BackPack
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className='header-nav__item group'>
-                    <a
+                    <Link
                       className='block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
-                      href='#'
+                      to='/shop-grid-col-3'
                     >
                       Shop
-                    </a>
+                    </Link>
                     <ul className='mega-menu flex flex-wrap bg-white py-5 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10'>
                       <li className='flex-auto px-4'>
-                        <a
+                        <Link
                           className='font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Shop Grid{' '}
-                        </a>
+                        </Link>
                         <ul className='pb-2'>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop Grid 3 Column
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop Grid 4 Column
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop Grid Left Sidebar
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               shop Grid Right Sidebar
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
 
                       <li className='flex-auto px-4'>
-                        <a
+                        <Link
                           className='font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange'
-                          href='shop-list.html'
+                          to='shop-list.html'
                         >
                           shop list
-                        </a>
+                        </Link>
                         <ul className='pb-2'>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop List
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop List Left Sidebar
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop List Right Sidebar
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
 
                       <li className='flex-auto px-4'>
-                        <a
+                        <Link
                           className='font-normal text-base capitalize text-dark pb-5 border-b block border-solid border-gray-600 mb-6 tracking-wide transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Product Types
-                        </a>
+                        </Link>
                         <ul className='pb-2'>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop Single
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop Variable
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop Affiliate
-                            </a>
+                            </Link>
                           </li>
                           <li className='my-3'>
-                            <a
+                            <Link
                               className='font-normal text-base capitalize text-dark tracking-wide block hover:text-orange transition-all'
-                              href='#'
+                              to='/shop-grid-col-3'
                             >
                               Shop Group
-                            </a>
+                            </Link>
                           </li>
                         </ul>
                       </li>
                       <li className='overflow-hidden flex-auto mx-4'>
-                        <a href='#'>
+                        <Link to='/shop-grid-col-3'>
                           <img
                             className='transform hover:scale-105 transition-all w-full'
                             src='assets/images/mega-menu/megamenu.webp'
@@ -216,175 +217,175 @@ function ShopThreeColumn() {
                             width='1000'
                             height='120'
                           />
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className='header-nav__item relative group'>
-                    <a
+                    <Link
                       className='block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
-                      href='#'
+                      to='/shop-grid-col-3'
                     >
                       Blog
-                    </a>
+                    </Link>
                     <ul className='submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max'>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Blog Grid 3 Column
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Blog Grid 2 Column
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Blog Grid Left Sidebar
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Blog Grid Right Sidebar
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Blog list
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Blog List Left Sidebar
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           {' '}
                           Blog List Right Sideba
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           {' '}
                           Blog details
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className='header-nav__item relative group'>
-                    <a
+                    <Link
                       className='block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
-                      href='#'
+                      to='/shop-grid-col-3'
                     >
                       Pages
-                    </a>
+                    </Link>
                     <ul className='submenu bg-white py-3 px-8 shadow transition-all absolute left-0 top-full opacity-0 group-hover:opacity-100 invisible group-hover:visible group-hover:-translate-y-3 transform z-10 min-w-max'>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           About Page
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Cart Page
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Checkout Page
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Compare Page
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Login &amp; Register Page
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Account Page
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Wishlist Page
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Frequently Questions
-                        </a>
+                        </Link>
                       </li>
                       <li className='my-3'>
-                        <a
+                        <Link
                           className='text-dark font-normal text-base capitalize transition-all hover:text-orange'
-                          href='#'
+                          to='/shop-grid-col-3'
                         >
                           Error 404
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </li>
                   <li className='header-nav__item'>
-                    <a
+                    <Link
                       className='block py-10 xl:px-6 md:px-5 capitalize font-normal text-md text-primary hover:text-orange transition-all'
-                      href='#'
+                      to='/shop-grid-col-3'
                     >
                       Contact
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </nav>
@@ -397,8 +398,8 @@ function ShopThreeColumn() {
                   </button>
                 </li>
                 <li className='ml-6'>
-                  <a
-                    href='#'
+                  <Link
+                    to='/shop-grid-col-3'
                     className='text-primary text-md hover:text-orange transition-all relative'
                   >
                     <span className='w-5 h-5 bg-dark text-white text-sm rounded-full font-normal flex flex-wrap items-center justify-center absolute -top-3 left-2 leading-none'>
@@ -408,7 +409,7 @@ function ShopThreeColumn() {
                     <span className='text-base leading-none text-dark pl-1'>
                       $245
                     </span>
-                  </a>
+                  </Link>
                 </li>
                 <li id='toggle-menu' className='ml-6 hidden lg:block'>
                   <button className='text-primary text-md hover:text-orange transition-all toggle-menu'>
@@ -416,12 +417,12 @@ function ShopThreeColumn() {
                   </button>
                 </li>
                 <li className='ml-6 lg:hidden'>
-                  <a
-                    href='#'
+                  <Link
+                    to='/shop-grid-col-3'
                     className='offcanvas-toggle text-primary text-md hover:text-orange transition-all'
                   >
                     <i className='icon-menu'></i>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -434,12 +435,12 @@ function ShopThreeColumn() {
         <div className='container'>
           <ul className='flex flex-wrap items-center justify-center'>
             <li className='w-auto mr-5'>
-              <a
-                href='#'
+              <Link
+                to='/shop-grid-col-3'
                 className='text-dark font-medium text-base uppercase transition-all hover:text-orange relative before:w-5 before:h-1px before:empty before:absolute before:top-3 before:bg-dark before:transform before:rotate-115 before:-right-5'
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li className='w-auto text-dark font-medium text-base uppercase'>
               SHOP-GRID-3-COLUMN
@@ -482,7 +483,7 @@ function ShopThreeColumn() {
             </div>
             <div className='filter-item'>
               <ul className='shop-tab-nav flex flex-wrap'>
-                <li className={isShowProductsGrid && 'active'}>
+                <li className={isShowProductsGrid ? 'active' : ''}>
                   <button
                     onClick={handleShowGridClick}
                     className='text-base hover:text-orange inline-block py-2 px-2'
@@ -490,7 +491,7 @@ function ShopThreeColumn() {
                     <i className='icon-grid'></i>
                   </button>
                 </li>
-                <li className={!isShowProductsGrid && 'active'}>
+                <li className={!isShowProductsGrid ? 'active' : ''}>
                   <button
                     onClick={handleShowListClick}
                     className='text-base hover:text-orange inline-block py-2 px-2 ml-5'
@@ -533,36 +534,36 @@ function ShopThreeColumn() {
                     <div className='card-actions-container absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden'>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-magnifier'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-heart'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-refresh'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-bag'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -608,12 +609,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='card-bottom py-5 px-4'>
                     <h4>
-                      <a
+                      <Link
                         className='block text-base hover:text-orange transition-all'
-                        href='#'
+                        to='/shop-grid-col-3'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <h5 className='font-bold text-md leading-none text-orange mt-3'>
                       <del className='font-normal text-sm mr-1 inline-block'>
@@ -645,36 +646,36 @@ function ShopThreeColumn() {
                     <div className='card-actions-container absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden'>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-magnifier'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-heart'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-refresh'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-bag'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -720,127 +721,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='card-bottom py-5 px-4'>
                     <h4>
-                      <a
+                      <Link
                         className='block text-base hover:text-orange transition-all'
-                        href='#'
+                        to='/shop-grid-col-3'
                       >
                         Batin crofessor pampden
-                      </a>
-                    </h4>
-                    <h5 className='font-bold text-md leading-none text-orange mt-3'>
-                      <del className='font-normal text-sm mr-1 inline-block'>
-                        $110.00
-                      </del>
-                      $130.00
-                    </h5>
-                  </div>
-                </div>
-              </div>
-              <div className='product-grid__item w-full md:w-1/2 lg:w-1/3 px-4 py-4'>
-                <div className='product-card border border-solid border-gray-300 transition-all hover:shadow-product group relative'>
-                  <div className='card-top relative overflow-hidden'>
-                    <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3'>
-                      New
-                    </span>
-                    <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3'>
-                      Sale
-                    </span>
-                    <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3'>
-                      -11%
-                    </span>
-                    <img
-                      className='w-full h-full'
-                      src='assets/images/products/drone/product1.webp'
-                      alt='product image'
-                      loading='lazy'
-                      width='432'
-                      height='480'
-                    />
-                    {/* ---- Card actions start ------- */}
-                    <div className='card-actions-container absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
-                      <ul className='flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden'>
-                        <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
-                            className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
-                          >
-                            <i className='icon-magnifier'></i>
-                          </a>
-                        </li>
-                        <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
-                            className='text-dark flex items-center justify-center text-md hover:text-orange'
-                          >
-                            <i className='icon-heart'></i>
-                          </a>
-                        </li>
-                        <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
-                            className='text-dark flex items-center justify-center text-md hover:text-orange'
-                          >
-                            <i className='icon-refresh'></i>
-                          </a>
-                        </li>
-                        <li className='py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8'>
-                          <a
-                            href='#'
-                            className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
-                          >
-                            <i className='icon-bag'></i>
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                    {/* ---- Card actions end ------- */}
-                    {/* ---- Card color start ------- */}
-                    <div className='p-2 bg-gray-200 shadow absolute left-2 right-2 -bottom-40 group-hover:bottom-2 z-20 transition-all duration-500 ease-linear'>
-                      <ul className='flex flex-wrap items-center justify-center mb-3'>
-                        <li className='mx-1 leading-none'>
-                          <button className='text-sm'>sm</button>
-                        </li>
-                        <li className='mx-1 leading-none'>
-                          <button className='text-sm'>l</button>
-                        </li>
-                        <li className='mx-1 leading-none'>
-                          <button className='text-sm'>m</button>
-                        </li>
-                        <li className='mx-1 leading-none'>
-                          <button className='text-sm'>xl</button>
-                        </li>
-                        <li className='mx-1 leading-none'>
-                          <button className='text-sm'>xxl</button>
-                        </li>
-                      </ul>
-                      <ul className='flex flex-wrap items-center justify-center'>
-                        <li className='mx-1 leading-none'>
-                          <button
-                            className='w-4 h-4 rounded-full bg-orange'
-                            aria-label='colors'
-                          ></button>
-                        </li>
-                        <li className='mx-1 leading-none'>
-                          <button className='w-4 h-4 rounded-full bg-primary'></button>
-                        </li>
-                        <li className='mx-1 leading-none'>
-                          <button className='w-4 h-4 rounded-full bg-indigo-600'></button>
-                        </li>
-                        <li className='mx-1 leading-none'>
-                          <button className='w-4 h-4 rounded-full bg-dark'></button>
-                        </li>
-                      </ul>
-                    </div>
-                    {/* ---- Card color end ------- */}
-                  </div>
-                  <div className='card-bottom py-5 px-4'>
-                    <h4>
-                      <a
-                        className='block text-base hover:text-orange transition-all'
-                        href='#'
-                      >
-                        Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <h5 className='font-bold text-md leading-none text-orange mt-3'>
                       <del className='font-normal text-sm mr-1 inline-block'>
@@ -875,36 +761,36 @@ function ShopThreeColumn() {
                     <div className='card-actions-container absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden'>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-magnifier'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-heart'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-refresh'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-bag'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -950,12 +836,127 @@ function ShopThreeColumn() {
                   </div>
                   <div className='card-bottom py-5 px-4'>
                     <h4>
-                      <a
+                      <Link
                         className='block text-base hover:text-orange transition-all'
-                        href='#'
+                        to='/shop-grid-col-3'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
+                    </h4>
+                    <h5 className='font-bold text-md leading-none text-orange mt-3'>
+                      <del className='font-normal text-sm mr-1 inline-block'>
+                        $110.00
+                      </del>
+                      $130.00
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div className='product-grid__item w-full md:w-1/2 lg:w-1/3 px-4 py-4'>
+                <div className='product-card border border-solid border-gray-300 transition-all hover:shadow-product group relative'>
+                  <div className='card-top relative overflow-hidden'>
+                    <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3'>
+                      New
+                    </span>
+                    <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3'>
+                      Sale
+                    </span>
+                    <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3'>
+                      -11%
+                    </span>
+                    <img
+                      className='w-full h-full'
+                      src='assets/images/products/drone/product1.webp'
+                      alt='product image'
+                      loading='lazy'
+                      width='432'
+                      height='480'
+                    />
+                    {/* ---- Card actions start ------- */}
+                    <div className='card-actions-container absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
+                      <ul className='flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden'>
+                        <li className='py-4 pl-7 md:py-5 md:pl-8'>
+                          <Link
+                            to='/shop-grid-col-3'
+                            className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
+                          >
+                            <i className='icon-magnifier'></i>
+                          </Link>
+                        </li>
+                        <li className='py-4 pl-7 md:py-5 md:pl-8'>
+                          <Link
+                            to='/shop-grid-col-3'
+                            className='text-dark flex items-center justify-center text-md hover:text-orange'
+                          >
+                            <i className='icon-heart'></i>
+                          </Link>
+                        </li>
+                        <li className='py-4 pl-7 md:py-5 md:pl-8'>
+                          <Link
+                            to='/shop-grid-col-3'
+                            className='text-dark flex items-center justify-center text-md hover:text-orange'
+                          >
+                            <i className='icon-refresh'></i>
+                          </Link>
+                        </li>
+                        <li className='py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8'>
+                          <Link
+                            to='/shop-grid-col-3'
+                            className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
+                          >
+                            <i className='icon-bag'></i>
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* ---- Card actions end ------- */}
+                    {/* ---- Card color start ------- */}
+                    <div className='p-2 bg-gray-200 shadow absolute left-2 right-2 -bottom-40 group-hover:bottom-2 z-20 transition-all duration-500 ease-linear'>
+                      <ul className='flex flex-wrap items-center justify-center mb-3'>
+                        <li className='mx-1 leading-none'>
+                          <button className='text-sm'>sm</button>
+                        </li>
+                        <li className='mx-1 leading-none'>
+                          <button className='text-sm'>l</button>
+                        </li>
+                        <li className='mx-1 leading-none'>
+                          <button className='text-sm'>m</button>
+                        </li>
+                        <li className='mx-1 leading-none'>
+                          <button className='text-sm'>xl</button>
+                        </li>
+                        <li className='mx-1 leading-none'>
+                          <button className='text-sm'>xxl</button>
+                        </li>
+                      </ul>
+                      <ul className='flex flex-wrap items-center justify-center'>
+                        <li className='mx-1 leading-none'>
+                          <button
+                            className='w-4 h-4 rounded-full bg-orange'
+                            aria-label='colors'
+                          ></button>
+                        </li>
+                        <li className='mx-1 leading-none'>
+                          <button className='w-4 h-4 rounded-full bg-primary'></button>
+                        </li>
+                        <li className='mx-1 leading-none'>
+                          <button className='w-4 h-4 rounded-full bg-indigo-600'></button>
+                        </li>
+                        <li className='mx-1 leading-none'>
+                          <button className='w-4 h-4 rounded-full bg-dark'></button>
+                        </li>
+                      </ul>
+                    </div>
+                    {/* ---- Card color end ------- */}
+                  </div>
+                  <div className='card-bottom py-5 px-4'>
+                    <h4>
+                      <Link
+                        className='block text-base hover:text-orange transition-all'
+                        to='/shop-grid-col-3'
+                      >
+                        Batin crofessor pampden
+                      </Link>
                     </h4>
                     <h5 className='font-bold text-md leading-none text-orange mt-3'>
                       <del className='font-normal text-sm mr-1 inline-block'>
@@ -987,36 +988,36 @@ function ShopThreeColumn() {
                     <div className='card-actions-container absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow rounded-full h-0 transition-all group-hover:h-16 duration-500 overflow-hidden'>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-magnifier'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-heart'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 md:py-5 md:pl-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange'
                           >
                             <i className='icon-refresh'></i>
-                          </a>
+                          </Link>
                         </li>
                         <li className='py-4 pl-7 pr-7 md:py-5 md:pl-8 md:pr-8'>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle'
                           >
                             <i className='icon-bag'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1062,12 +1063,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='card-bottom py-5 px-4'>
                     <h4>
-                      <a
+                      <Link
                         className='block text-base hover:text-orange transition-all'
-                        href='#'
+                        to='/shop-grid-col-3'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <h5 className='font-bold text-md leading-none text-orange mt-3'>
                       <del className='font-normal text-sm mr-1 inline-block'>
@@ -1112,12 +1113,12 @@ function ShopThreeColumn() {
                     <div className='absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow opacity-0 invisible transform translate-y-4 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-linear'>
                         <li>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4'
                           >
                             <i className='icon-magnifier-add'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1163,12 +1164,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='product-card__content flex-1 py-5 px-4'>
                     <h4>
-                      <a
-                        href='#'
+                      <Link
+                        to='/shop-grid-col-3'
                         className='block text-md hover:text-orange transition-all mb-2'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <p className='text-sm'>
                       There are many variations of passages of Lorem Ipsum
@@ -1186,29 +1187,29 @@ function ShopThreeColumn() {
                     </h5>
                     <ul className='flex items-center'>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md border border-solid border-dark hover:text-white  hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
-                          <i class='icon-heart'></i>
-                        </a>
+                          <i className='icon-heart'></i>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
                           <i className='icon-basket-loaded'></i>
                           <span className='text-sm ml-2'>Add to cart</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='flex items-center justify-center py-3 px-4 md:px-5 text-md leading-none text-dark border border-solid border-dark hover:text-white hover:bg-orange hover:border-orange transition-all'
                         >
-                          <i class='icon-refresh'></i>
-                        </a>
+                          <i className='icon-refresh'></i>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -1238,12 +1239,12 @@ function ShopThreeColumn() {
                     <div className='absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow opacity-0 invisible transform translate-y-4 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-linear'>
                         <li>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4'
                           >
                             <i className='icon-magnifier-add'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1289,12 +1290,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='product-card__content flex-1 py-5 px-4'>
                     <h4>
-                      <a
-                        href='#'
+                      <Link
+                        to='/shop-grid-col-3'
                         className='block text-md hover:text-orange transition-all mb-2'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <p className='text-sm'>
                       There are many variations of passages of Lorem Ipsum
@@ -1312,29 +1313,29 @@ function ShopThreeColumn() {
                     </h5>
                     <ul className='flex items-center'>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md border border-solid border-dark hover:text-white  hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
-                          <i class='icon-heart'></i>
-                        </a>
+                          <i className='icon-heart'></i>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
                           <i className='icon-basket-loaded'></i>
                           <span className='text-sm ml-2'>Add to cart</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='flex items-center justify-center py-3 px-4 md:px-5 text-md leading-none text-dark border border-solid border-dark hover:text-white hover:bg-orange hover:border-orange transition-all'
                         >
-                          <i class='icon-refresh'></i>
-                        </a>
+                          <i className='icon-refresh'></i>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -1364,12 +1365,12 @@ function ShopThreeColumn() {
                     <div className='absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow opacity-0 invisible transform translate-y-4 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-linear'>
                         <li>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4'
                           >
                             <i className='icon-magnifier-add'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1415,12 +1416,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='product-card__content flex-1 py-5 px-4'>
                     <h4>
-                      <a
-                        href='#'
+                      <Link
+                        to='/shop-grid-col-3'
                         className='block text-md hover:text-orange transition-all mb-2'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <p className='text-sm'>
                       There are many variations of passages of Lorem Ipsum
@@ -1438,29 +1439,29 @@ function ShopThreeColumn() {
                     </h5>
                     <ul className='flex items-center'>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md border border-solid border-dark hover:text-white  hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
-                          <i class='icon-heart'></i>
-                        </a>
+                          <i className='icon-heart'></i>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
                           <i className='icon-basket-loaded'></i>
                           <span className='text-sm ml-2'>Add to cart</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='flex items-center justify-center py-3 px-4 md:px-5 text-md leading-none text-dark border border-solid border-dark hover:text-white hover:bg-orange hover:border-orange transition-all'
                         >
-                          <i class='icon-refresh'></i>
-                        </a>
+                          <i className='icon-refresh'></i>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -1490,12 +1491,12 @@ function ShopThreeColumn() {
                     <div className='absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow opacity-0 invisible transform translate-y-4 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-linear'>
                         <li>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4'
                           >
                             <i className='icon-magnifier-add'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1541,12 +1542,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='product-card__content flex-1 py-5 px-4'>
                     <h4>
-                      <a
-                        href='#'
+                      <Link
+                        to='/shop-grid-col-3'
                         className='block text-md hover:text-orange transition-all mb-2'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <p className='text-sm'>
                       There are many variations of passages of Lorem Ipsum
@@ -1564,29 +1565,29 @@ function ShopThreeColumn() {
                     </h5>
                     <ul className='flex items-center'>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md border border-solid border-dark hover:text-white  hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
-                          <i class='icon-heart'></i>
-                        </a>
+                          <i className='icon-heart'></i>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
                           <i className='icon-basket-loaded'></i>
                           <span className='text-sm ml-2'>Add to cart</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='flex items-center justify-center py-3 px-4 md:px-5 text-md leading-none text-dark border border-solid border-dark hover:text-white hover:bg-orange hover:border-orange transition-all'
                         >
-                          <i class='icon-refresh'></i>
-                        </a>
+                          <i className='icon-refresh'></i>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -1616,12 +1617,12 @@ function ShopThreeColumn() {
                     <div className='absolute left-2/4 top-2/4 transform -translate-x-2/4 -translate-y-2/4 z-10'>
                       <ul className='flex items-center justify-center bg-white shadow opacity-0 invisible transform translate-y-4 group-hover:visible group-hover:opacity-100 group-hover:translate-y-0 transition-all ease-linear'>
                         <li>
-                          <a
-                            href='#'
+                          <Link
+                            to='/shop-grid-col-3'
                             className='text-dark flex items-center justify-center text-md hover:text-orange modal-toggle px-4 py-4'
                           >
                             <i className='icon-magnifier-add'></i>
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -1667,12 +1668,12 @@ function ShopThreeColumn() {
                   </div>
                   <div className='product-card__content flex-1 py-5 px-4'>
                     <h4>
-                      <a
-                        href='#'
+                      <Link
+                        to='/shop-grid-col-3'
                         className='block text-md hover:text-orange transition-all mb-2'
                       >
                         Batin crofessor pampden
-                      </a>
+                      </Link>
                     </h4>
                     <p className='text-sm'>
                       There are many variations of passages of Lorem Ipsum
@@ -1690,29 +1691,29 @@ function ShopThreeColumn() {
                     </h5>
                     <ul className='flex items-center'>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md border border-solid border-dark hover:text-white  hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
-                          <i class='icon-heart'></i>
-                        </a>
+                          <i className='icon-heart'></i>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='text-dark flex items-center justify-center text-md hover:text-white border border-solid border-dark hover:bg-orange transition-all px-4 md:px-5 py-3 leading-none hover:border-orange'
                         >
                           <i className='icon-basket-loaded'></i>
                           <span className='text-sm ml-2'>Add to cart</span>
-                        </a>
+                        </Link>
                       </li>
                       <li className='mr-2'>
-                        <a
-                          href='#'
+                        <Link
+                          to='/shop-grid-col-3'
                           className='flex items-center justify-center py-3 px-4 md:px-5 text-md leading-none text-dark border border-solid border-dark hover:text-white hover:bg-orange hover:border-orange transition-all'
                         >
-                          <i class='icon-refresh'></i>
-                        </a>
+                          <i className='icon-refresh'></i>
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -1728,44 +1729,44 @@ function ShopThreeColumn() {
         <div className='container'>
           <ul className='pagination-items flex flex-wrap items-center justify-center'>
             <li className='pagination-item px-2'>
-              <a
-                href='#'
+              <Link
+                to='/shop-grid-col-3'
                 className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
               >
-                <i class='icon-arrow-left'></i>
-              </a>
+                <i className='icon-arrow-left'></i>
+              </Link>
             </li>
             <li className='pagination-item px-2'>
-              <a
-                href='#'
+              <Link
+                to='/shop-grid-col-3'
                 className='w-11 h-11 flex items-center justify-center  leading-none  shadow bg-orange text-white transition-all'
               >
                 1
-              </a>
+              </Link>
             </li>
             <li className='pagination-item px-2'>
-              <a
-                href='#'
+              <Link
+                to='/shop-grid-col-3'
                 className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
               >
                 2
-              </a>
+              </Link>
             </li>
             <li className='pagination-item px-2'>
-              <a
-                href='#'
+              <Link
+                to='/shop-grid-col-3'
                 className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
               >
                 3
-              </a>
+              </Link>
             </li>
             <li className='pagination-item px-2'>
-              <a
-                href='#'
+              <Link
+                to='/shop-grid-col-3'
                 className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
               >
-                <i class='icon-arrow-right'></i>
-              </a>
+                <i className='icon-arrow-right'></i>
+              </Link>
             </li>
           </ul>
         </div>
@@ -1775,14 +1776,14 @@ function ShopThreeColumn() {
       <section id='contact' className='py-24 bg-gray-100'>
         <div className='container'>
           <div className='max-w-[600px] mx-auto text-center'>
-            <a className='inline-block mb-11'>
+            <Link className='inline-block mb-11'>
               <img
                 src='assets/images/logo/logo.webp'
                 alt='brand logo'
                 width='125'
                 height='45'
               />
-            </a>
+            </Link>
             <p className='text-sm sm:text-base mb-10'>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.aliqua.
               Ut enim ad minim. Lorem ipsum dolor sit amet.
@@ -1807,36 +1808,36 @@ function ShopThreeColumn() {
               </button>
             </form>
             <div className='contact-icons flex flex-wrap items-center justify-center'>
-              <a
-                href='#'
+              <Link
+                to='/shop-grid-col-3'
                 className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
               >
                 <i className='icon-social-facebook'></i>
-              </a>
-              <a
-                href='#'
+              </Link>
+              <Link
+                to='/shop-grid-col-3'
                 className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
               >
                 <i className='icon-social-twitter'></i>
-              </a>
-              <a
-                href='#'
+              </Link>
+              <Link
+                to='/shop-grid-col-3'
                 className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
               >
                 <i className='icon-social-instagram'></i>
-              </a>
-              <a
-                href='#'
+              </Link>
+              <Link
+                to='/shop-grid-col-3'
                 className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
               >
                 <i className='icon-social-youtube'></i>
-              </a>
-              <a
-                href='#'
+              </Link>
+              <Link
+                to='/shop-grid-col-3'
                 className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
               >
                 <i className='icon-social-dribbble'></i>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -1859,9 +1860,12 @@ function ShopThreeColumn() {
               <p className='text-white flex flex-wrap items-center text-sm lg:text-base'>
                 © 2022 Sinp. Made with{' '}
                 <i className='icon-heart mx-2 text-orange'></i> by
-                <a href='#' className='ml-1 transition hover:text-orange'>
+                <Link
+                  to='/shop-grid-col-3'
+                  className='ml-1 transition hover:text-orange'
+                >
                   Codecarnival
-                </a>
+                </Link>
                 .
               </p>
             </div>
