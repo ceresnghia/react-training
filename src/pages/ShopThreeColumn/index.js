@@ -6,9 +6,12 @@ import HeroSection from './components/HeroSection';
 import FilterSection from './components/FilterSection';
 import ProductGridSection from './components/ProductGridSection';
 import ProductListSection from './components/ProductListSection';
+import PaginationSection from './components/PaginationSection';
+import ContactSection from './components/ContactSection';
 
 function ShopThreeColumn() {
   const [isShowProductsGrid, setIsShowProductsGrid] = useState(true);
+  const [email, setEmail] = useState('');
 
   useEffect(() => {
     document.title = 'Hello Tailwind';
@@ -20,6 +23,17 @@ function ShopThreeColumn() {
 
   const handleShowListClick = () => {
     setIsShowProductsGrid(false);
+  };
+
+  const handleEmailInputChange = (e) => {
+    setEmail(e.target.value);
+    console.log('email', email);
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    console.log('Form submitted: ', email);
   };
 
   return (
@@ -49,125 +63,17 @@ function ShopThreeColumn() {
       {/* ----- Products List section end ----- */}
 
       {/* ----- Pagination section start ----- */}
-      <section id='pagination' className='mt-12 mb-24'>
-        <div className='container'>
-          <ul className='pagination-items flex flex-wrap items-center justify-center'>
-            <li className='pagination-item px-2'>
-              <Link
-                to='/shop-grid-col-3'
-                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
-              >
-                <i className='icon-arrow-left'></i>
-              </Link>
-            </li>
-            <li className='pagination-item px-2'>
-              <Link
-                to='/shop-grid-col-3'
-                className='w-11 h-11 flex items-center justify-center  leading-none  shadow bg-orange text-white transition-all'
-              >
-                1
-              </Link>
-            </li>
-            <li className='pagination-item px-2'>
-              <Link
-                to='/shop-grid-col-3'
-                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
-              >
-                2
-              </Link>
-            </li>
-            <li className='pagination-item px-2'>
-              <Link
-                to='/shop-grid-col-3'
-                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
-              >
-                3
-              </Link>
-            </li>
-            <li className='pagination-item px-2'>
-              <Link
-                to='/shop-grid-col-3'
-                className='w-11 h-11 flex items-center justify-center text-orange leading-none bg-white shadow hover:bg-orange hover:text-white transition-all'
-              >
-                <i className='icon-arrow-right'></i>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </section>
+      <PaginationSection />
       {/* ----- Pagination section end ----- */}
 
       {/* ----- Contact section start ----- */}
-      <section id='contact' className='py-24 bg-gray-100'>
-        <div className='container'>
-          <div className='max-w-[600px] mx-auto text-center'>
-            <Link className='inline-block mb-11'>
-              <img
-                src='assets/images/logo/logo.webp'
-                alt='brand logo'
-                width='125'
-                height='45'
-              />
-            </Link>
-            <p className='text-sm sm:text-base mb-10'>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.aliqua.
-              Ut enim ad minim. Lorem ipsum dolor sit amet.
-            </p>
-            <form
-              action=''
-              id='contact-form'
-              className='relative text-center md:max-w-xl mx-auto mb-10'
-            >
-              <input
-                type='email'
-                id='mail-input'
-                name='email'
-                placeholder='email@gmail.com'
-                className='w-full h-14 sm:h-16 leading-none text-sm sm:text-base rounded-full border border-solid border-primary bg-transparent placeholder-primary placeholder-opacity-50 focus:outline-none py-1 pl-8 pr-14 sm:pr-36'
-              />
-              <button
-                id='contact-form__submit'
-                className='block sm:absolute w-full mt-3 sm:mt-0 sm:w-auto text-white capitalize font-medium leading-none text-sm lg:text-md bg-dark hover:bg-orange px-10 py-5 sm:px-3 sm:py-1 transition-all rounded-r-full rounded-l-full sm:rounded-l-none sm:top-0 sm:right-0 sm:h-full'
-              >
-                Subscribe
-              </button>
-            </form>
-            <div className='contact-icons flex flex-wrap items-center justify-center'>
-              <Link
-                to='/shop-grid-col-3'
-                className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
-              >
-                <i className='icon-social-facebook'></i>
-              </Link>
-              <Link
-                to='/shop-grid-col-3'
-                className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
-              >
-                <i className='icon-social-twitter'></i>
-              </Link>
-              <Link
-                to='/shop-grid-col-3'
-                className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
-              >
-                <i className='icon-social-instagram'></i>
-              </Link>
-              <Link
-                to='/shop-grid-col-3'
-                className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
-              >
-                <i className='icon-social-youtube'></i>
-              </Link>
-              <Link
-                to='/shop-grid-col-3'
-                className='contact-icon flex items-center justify-center mx-3 leading-none text-lg text-dark hover:text-orange transition '
-              >
-                <i className='icon-social-dribbble'></i>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ContactSection
+        email={email}
+        onEmailInputChange={handleEmailInputChange}
+        onFormSubmit={handleFormSubmit}
+      />
       {/* ----- Contact section end ----- */}
+
       {/* ----- Footer section start ----- */}
       <footer id='footer' className='py-8 bg-gray-500'>
         <div className='container'>
