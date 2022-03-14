@@ -55,6 +55,7 @@ function App() {
           onEmailInputChange={handleEmailInputChange}
           onFormSubmit={handleFormSubmit}
         />
+
         <FooterSection />
       </Router>
     </>

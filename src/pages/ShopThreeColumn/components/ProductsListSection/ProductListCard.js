@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { formatMoney } from '../../../../utils/formatMoney';
 
 const ProductListCard = ({ product }) => {
+  console.log('ProductListCard rerender');
   return (
     <div className='product-list__item w-full mt-7'>
       <div className='product-card flex flex-wrap flex-col md:flex-row border border-solid border-gray-300 transition-all hover:shadow-product group relative'>

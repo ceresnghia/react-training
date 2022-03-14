@@ -1,8 +1,11 @@
+import { memo } from 'react';
+
 const FilterSection = ({
   isShowProductsGrid,
   onShowGridClick,
   onShowListClick
 }) => {
+  console.log('FilterSection rerender');
   return (
     <section id='filter' className='pt-24'>
       <div className='container'>
@@ -61,4 +64,4 @@ const FilterSection = ({
   );
 };
 
-export default FilterSection;
+export default memo(FilterSection);

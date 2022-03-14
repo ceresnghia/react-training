@@ -1,6 +1,7 @@
 import ProductListCard from './ProductListCard';
 
 const ProductsListSection = ({ products }) => {
+  console.log('ProductListSection rerender');
   return (
     <section id='productsList' className='mt-10 shop-tab-conten'>
       <div className='container'>

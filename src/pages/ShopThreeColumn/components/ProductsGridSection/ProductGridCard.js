@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { formatMoney } from '../../../../utils/formatMoney';
 
 const ProductGridCard = ({ product }) => {
+  console.log('ProductGirdCard rerender');
   return (
     <div className='product-grid__item w-full md:w-1/2 lg:w-1/3 px-4 py-4'>
       <div className='product-card border border-solid border-gray-300 transition-all hover:shadow-product group relative'>

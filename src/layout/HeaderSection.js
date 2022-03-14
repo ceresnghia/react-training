@@ -1,6 +1,8 @@
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
 export const HeaderSection = () => {
+  console.log('HeaderSection rerender');
   return (
     <header className='py-6 lg:py-0'>
       <div className='container '>
@@ -415,4 +417,4 @@ export const HeaderSection = () => {
   );
 };
 
-export default HeaderSection;
+export default memo(HeaderSection);

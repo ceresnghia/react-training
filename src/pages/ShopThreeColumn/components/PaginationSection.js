@@ -1,6 +1,8 @@
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
 const PaginationSection = () => {
+  console.log('PaginationSection rerender');
   return (
     <section id='pagination' className='mt-12 mb-24'>
       <div className='container'>
@@ -51,4 +53,4 @@ const PaginationSection = () => {
   );
 };
 
-export default PaginationSection;
+export default memo(PaginationSection);

@@ -1,6 +1,8 @@
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
 const HeroSection = ({ pageName }) => {
+  console.log('HeroSection rerender');
   return (
     <section id='hero-section' className='py-9 bg-gray-light min-h-full'>
       <div className='container'>
@@ -22,4 +24,4 @@ const HeroSection = ({ pageName }) => {
   );
 };
 
-export default HeroSection;
+export default memo(HeroSection);

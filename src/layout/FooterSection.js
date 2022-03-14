@@ -1,6 +1,8 @@
+import { memo } from 'react';
 import { Link } from 'react-router-dom';
 
 const FooterSection = () => {
+  console.log('FooterSection rerender');
   return (
     <footer id='footer' className='py-8 bg-gray-500'>
       <div className='container'>
@@ -33,4 +35,4 @@ const FooterSection = () => {
   );
 };
 
-export default FooterSection;
+export default memo(FooterSection);

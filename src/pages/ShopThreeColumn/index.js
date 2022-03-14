@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 
 import HeroSection from '../../layout/partials/HeroSection';
 import FilterSection from './components/FilterSection';
@@ -9,6 +9,7 @@ import PaginationSection from './components/PaginationSection';
 import data from '../../data/productsData';
 
 function ShopThreeColumn() {
+  console.log('<ShopThreeColumn /> rerender');
   const [isShowProductsGrid, setIsShowProductsGrid] = useState(true);
   const [products, setProducts] = useState([]);
 
@@ -20,13 +21,13 @@ function ShopThreeColumn() {
     setProducts(data.products);
   }, []);
 
-  const handleShowGridClick = () => {
+  const handleShowGridClick = useCallback(() => {
     setIsShowProductsGrid(true);
-  };
+  }, []);
 
-  const handleShowListClick = () => {
+  const handleShowListClick = useCallback(() => {
     setIsShowProductsGrid(false);
-  };
+  }, []);
 
   return (
     <>

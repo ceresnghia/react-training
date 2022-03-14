@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 
 const ContactSection = ({ email, onEmailInputChange, onFormSubmit }) => {
+  console.log('ContactSection rerender');
   return (
     <section id='contact' className='py-24 bg-gray-100'>
       <div className='container'>

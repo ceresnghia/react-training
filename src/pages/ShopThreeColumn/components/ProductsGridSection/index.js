@@ -1,6 +1,8 @@
+import { memo } from 'react';
 import ProductGridCard from './ProductGridCard';
 
 const ProductsGridSection = ({ products }) => {
+  console.log('ProductGridSection rerender');
   return (
     <section id='productsGrid' className='mt-10 shop-tab-content active'>
       <div className='container'>
@@ -14,4 +16,4 @@ const ProductsGridSection = ({ products }) => {
   );
 };
 
-export default ProductsGridSection;
+export default memo(ProductsGridSection);
