@@ -34,7 +34,7 @@ function ShopThreeColumn() {
                 </a>
               </div>
             </div>
-            <div className='header-middle__col hidden lg:flex flex-1'>
+            <div className='header-middle__col hidden lg:flex flex-1 relative'>
               <nav className='header-nav'>
                 <ul className='flex flex-wrap'>
                   <li className='header-nav__item relative group'>
@@ -389,7 +389,7 @@ function ShopThreeColumn() {
                 </ul>
               </nav>
             </div>
-            <div className='header-right__col w-6/12 lg:w-3/12'>
+            <div className='header-right__col min-w-fit w-6/12 lg:w-2/12'>
               <ul className='flex items-center justify-end'>
                 <li className='header-search ml-6 hidden lg:block'>
                   <button className='search-toggle text-right text-primary text-md hover:text-orange transition-all'>
