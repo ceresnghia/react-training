@@ -8,6 +8,7 @@ import ProductGridSection from './components/ProductGridSection';
 import ProductListSection from './components/ProductListSection';
 import PaginationSection from './components/PaginationSection';
 import ContactSection from './components/ContactSection';
+import FooterSection from './components/FooterSection';
 
 function ShopThreeColumn() {
   const [isShowProductsGrid, setIsShowProductsGrid] = useState(true);
@@ -27,12 +28,20 @@ function ShopThreeColumn() {
 
   const handleEmailInputChange = (e) => {
     setEmail(e.target.value);
-    console.log('email', email);
+    console.log('Email Input Changed', email);
   };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
+    const regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (!regexEmail.test(email)) {
+      alert('Please enter a valid email address!');
+      return;
+    }
+
+    alert('Form submitted!');
     console.log('Form submitted: ', email);
   };
 
@@ -75,34 +84,7 @@ function ShopThreeColumn() {
       {/* ----- Contact section end ----- */}
 
       {/* ----- Footer section start ----- */}
-      <footer id='footer' className='py-8 bg-gray-500'>
-        <div className='container'>
-          <div className='flex flex-wrap items-center justify-center gap-4 md:flex-row-reverse'>
-            <div className='footer-image-container w-full md:w-1/2 text-center md:text-right'>
-              <img
-                src='assets/images/logo/payment.webp'
-                alt=''
-                className='footer-image inline-block'
-                width='286'
-                height='23'
-              />
-            </div>
-            <div className='footer-content flex-1 flex items-center justify-center md:justify-start'>
-              <p className='text-white flex flex-wrap items-center text-sm lg:text-base'>
-                © 2022 Sinp. Made with{' '}
-                <i className='icon-heart mx-2 text-orange'></i> by
-                <Link
-                  to='/shop-grid-col-3'
-                  className='ml-1 transition hover:text-orange'
-                >
-                  Codecarnival
-                </Link>
-                .
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      <FooterSection />
       {/* ----- Footer section end ----- */}
     </>
   );
