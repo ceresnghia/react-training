@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-
 import { formatMoney } from '../../../../utils/formatMoney';
 
 const ProductListCard = ({ product }) => {

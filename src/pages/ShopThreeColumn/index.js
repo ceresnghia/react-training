@@ -9,13 +9,20 @@ import PaginationSection from './components/PaginationSection';
 import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
 
+import data from '../../data/productsData';
+
 function ShopThreeColumn() {
   const [isShowProductsGrid, setIsShowProductsGrid] = useState(true);
   const [email, setEmail] = useState('');
+  const [products, setProducts] = useState([]);
 
   useEffect(() => {
     document.title = 'Hello Tailwind';
   });
+
+  useEffect(() => {
+    setProducts(data.products);
+  }, []);
 
   const handleShowGridClick = () => {
     setIsShowProductsGrid(true);
@@ -63,11 +70,11 @@ function ShopThreeColumn() {
       {/* ----- Filter section end ----- */}
 
       {/* ----- Products Grid section start ----- */}
-      {isShowProductsGrid && <ProductsGridSection />}
+      {isShowProductsGrid && <ProductsGridSection products={products} />}
       {/* ----- Products Grid section end ----- */}
 
       {/* ----- Products List section start ----- */}
-      {!isShowProductsGrid && <ProductsListSection />}
+      {!isShowProductsGrid && <ProductsListSection products={products} />}
       {/* ----- Products List section end ----- */}
 
       {/* ----- Pagination section start ----- */}

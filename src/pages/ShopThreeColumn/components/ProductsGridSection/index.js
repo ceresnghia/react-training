@@ -1,20 +1,13 @@
 import ProductGridCard from './ProductGridCard';
 
-const ProductsGridSection = () => {
+const ProductsGridSection = ({ products }) => {
   return (
     <section id='productsGrid' className='mt-10 shop-tab-content active'>
       <div className='container'>
         <div className='product-grid__items flex flex-wrap -my-4 -mx-4'>
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
-          <ProductGridCard />
+          {products.map((product) => (
+            <ProductGridCard key={product.id} product={product} />
+          ))}
         </div>
       </div>
     </section>

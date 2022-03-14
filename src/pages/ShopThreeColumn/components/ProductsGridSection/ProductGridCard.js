@@ -1,22 +1,23 @@
 import { Link } from 'react-router-dom';
+import { formatMoney } from '../../../../utils/formatMoney';
 
-const ProductGridCard = () => {
+const ProductGridCard = ({ product }) => {
   return (
     <div className='product-grid__item w-full md:w-1/2 lg:w-1/3 px-4 py-4'>
       <div className='product-card border border-solid border-gray-300 transition-all hover:shadow-product group relative'>
         <div className='card-top relative overflow-hidden'>
           <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3'>
-            New
+            {product.isNew && 'New'}
           </span>
           <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3'>
-            Sale
+            {product.isSale && 'Sale'}
           </span>
           <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3'>
-            -11%
+            {product.isSale && `-${product.saleAmount}%`}
           </span>
           <img
             className='w-full h-full'
-            src='assets/images/products/drone/product1.webp'
+            src={product.img}
             alt='product image'
             loading='lazy'
             width='432'
@@ -109,8 +110,10 @@ const ProductGridCard = () => {
             </Link>
           </h4>
           <h5 className='font-bold text-md leading-none text-orange mt-3'>
-            <del className='font-normal text-sm mr-1 inline-block'>$110.00</del>
-            $130.00
+            <del className='font-normal text-sm mr-1 inline-block'>
+              {formatMoney(product.price)}
+            </del>
+            {formatMoney(product.salePrice)}
           </h5>
         </div>
       </div>
