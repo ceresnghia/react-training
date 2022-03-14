@@ -1,22 +1,24 @@
 import { Link } from 'react-router-dom';
 
-const ProductListCard = () => {
+import { formatMoney } from '../../../../utils/formatMoney';
+
+const ProductListCard = ({ product }) => {
   return (
     <div className='product-list__item w-full mt-7'>
       <div className='product-card flex flex-wrap flex-col md:flex-row border border-solid border-gray-300 transition-all hover:shadow-product group relative'>
         <div className='product-card__avatar md:w-1/3 relative overflow-hidden'>
           <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 left-3'>
-            New
+            {product.isNew && 'New'}
           </span>
           <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-3 right-3'>
-            Sale
+            {product.isSale && 'Sale'}
           </span>
           <span className='font-medium uppercase text-sm text-black inline-block py-1 px-2 leading-none absolute top-10 right-3'>
-            -11%
+            {product.isSale && `-${product.saleAmount}%`}
           </span>
           <img
             className='w-full h-full'
-            src='assets/images/products/drone/product2.webp'
+            src={product.img}
             alt='product image'
             width='432'
             height='480'
@@ -81,20 +83,15 @@ const ProductListCard = () => {
               to='/shop-grid-col-3'
               className='block text-md hover:text-orange transition-all mb-2'
             >
-              Batin crofessor pampden
+              {product.name}
             </Link>
           </h4>
-          <p className='text-sm'>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn't anything embarrassing hidden in the
-            middle of text.
-          </p>
+          <p className='text-sm'>{product.description}</p>
           <h5 className='font-bold text-md leading-none text-orange my-4'>
-            <del className='font-normal text-sm mr-1 inline-block'>$110.00</del>{' '}
-            $130.00
+            <del className='font-normal text-sm mr-1 inline-block'>
+              {formatMoney(product.price)}
+            </del>{' '}
+            {formatMoney(product.salePrice)}
           </h5>
           <ul className='flex items-center'>
             <li className='mr-2'>
