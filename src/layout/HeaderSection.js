@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-export const Header = () => {
+export const HeaderSection = () => {
   return (
     <header className='py-6 lg:py-0'>
       <div className='container '>
@@ -415,4 +415,4 @@ export const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderSection;
