@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import FilterSection from './components/FilterSection';
-import ProductGridSection from './components/ProductGridSection';
-import ProductListSection from './components/ProductListSection';
+import ProductsGridSection from './components/ProductsGridSection';
+import ProductsListSection from './components/ProductsListSection';
 import PaginationSection from './components/PaginationSection';
 import ContactSection from './components/ContactSection';
 import FooterSection from './components/FooterSection';
@@ -64,11 +63,11 @@ function ShopThreeColumn() {
       {/* ----- Filter section end ----- */}
 
       {/* ----- Products Grid section start ----- */}
-      {isShowProductsGrid && <ProductGridSection />}
+      {isShowProductsGrid && <ProductsGridSection />}
       {/* ----- Products Grid section end ----- */}
 
       {/* ----- Products List section start ----- */}
-      {!isShowProductsGrid && <ProductListSection />}
+      {!isShowProductsGrid && <ProductsListSection />}
       {/* ----- Products List section end ----- */}
 
       {/* ----- Pagination section start ----- */}

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const ProductListSection = () => {
+const ProductsListSection = () => {
   return (
     <section id='productsList' className='mt-10 shop-tab-conten'>
       <div className='container'>
@@ -641,4 +641,4 @@ const ProductListSection = () => {
   );
 };
 
-export default ProductListSection;
+export default ProductsListSection;
